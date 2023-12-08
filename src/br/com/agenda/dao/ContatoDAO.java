@@ -11,7 +11,7 @@ public class ContatoDAO {
 
 	/*
 	 * CRUD
-	 * c: CREATE
+	 * c: CREATE - OK
 	 * r: READ
 	 * u: UPDATE
 	 * d: DELETE
@@ -38,6 +38,8 @@ public class ContatoDAO {
 			
 			//Executar a query
 			pstm.execute();
+			
+			System.out.println("Contato salvo com sucesso!");
 		}catch (Exception e) {
 			e.printStackTrace();
 		}finally {
